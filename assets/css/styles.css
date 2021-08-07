@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&display=swap');
+
+/* font-family: 'Crimson Pro', serif; */
+
+
+/* font-family: 'Montserrat', sans-serif; */
+
+
+/* font-family: 'Lora', serif; */
+
+:root {
+    --primary-bg-color: #181719;
+    --text-bg-color: #ffffff;
+}
+
+body {
+    background: var(--primary-bg-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo-header {
+    border: 1px solid #fff;
+    font-family: 'Crimson Pro', serif;
+    font-size: 14px;
+}
+
+header nav {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li.active a {
+    border-bottom: 2px solid #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.banner figure {
+    float: right
+}
+
+.banner .content-text h3 {
+    font-family: 'Lora', serif;
+    font-size: 45px;
+}
+
+.banner .content-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 29.26px;
+}
+
+.banner .content-text a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+main {
+    background: #fff !important;
+}
+
+
+/*         
+            SECTION:PRODUCTS
+ */
+
+.products {
+    margin: 20px 0;
+}
+
+.products .item {
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.products .item .header-content-item {
+    border: 1px solid #efefef;
+}
+
+.products .item .header-content-item .flag {
+    top: 0;
+    right: 0;
+    background: #ff0000;
+    color: #fff;
+}
+
+.products .item .body-content-item a {
+    color: #2e374c;
+    font-weight: 600;
+}
+
+.products .item .body-content-item .agregar-carrito {
+    background: #000;
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.products .item .body-content-item .agregar-carrito span {
+    color: #ccc !important;
+    font-size: 1.4rem;
+}
+
+.price::before {
+    content: 'S/.'
+}
+
+.products .item .body-content-item .prices .price-o {
+    text-decoration: line-through;
+}
+
+.products .item .body-content-item .prices .price-dscto {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.nice-number button {
+    border: 1px solid #ccc;
+    width: 30px;
+}
+
+.nice-number button:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.nice-number button:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.nice-number input {
+    min-width: 40px;
+    border: 1px solid #ccc;
+}
+
+.owl-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.owl-nav button {
+    background: #fff !important;
+    width: 30px;
+    height: 35px;
+    font-size: 20px;
+}
+
+.owl-dots button {
+    background: #fff !important;
+}
+
+.owl-dots button span {
+    color: #fff !important;
+}
