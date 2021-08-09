@@ -27,7 +27,7 @@
                 </a>
 
                 <nav>
-                    <ul class="d-flex m-0 align-items-center">
+                    <ul class="d-flex m-0 align-items-center h-100">
                         <li class="px-4 ">
                             <a href="" class="d-flex align-items-center text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                                 <span class="material-icons">
@@ -42,14 +42,14 @@
                                 </span>
                             </a>
                         </li>
-                        <!-- <li class="px-4 active py-2"><a href="" class="text-white  p-1">Home</a></li>
-                        <li class="px-4 py-2"><a href="" class="text-white p-1">Collection</a></li>
-                        <li class="px-4 py-2">
-                            <a href="" class="text-white p-1">About</a>
+                        <li class="px-4 d-flex align-items-center">
+                            <a href="" class="d-flex text-white align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasLogin">
+                                <span class="material-icons">
+                                    menu
+                                </span>
+                            </a>
                         </li>
-                        <li class="px-4 py-2">
-                            <a href="" class="text-white p-1">Contact</a>
-                        </li> -->
+
                     </ul>
                 </nav>
 
@@ -59,7 +59,7 @@
 
     <section class="banner">
         <div class="container">
-            <div class="d-flex py-3 align-items-center justify-content-between ">
+            <div class="banner-content d-flex py-3 align-items-center justify-content-between ">
                 <div class="col-md-4">
                     <div class="content-text text-white">
                         <h3>Modern interior</h3>
@@ -73,10 +73,33 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <figure class="w-75">
+                <div class="col-md-8  position-relative">
+
+                    <figure class="w-75 m-0 img-banner">
                         <img src="assets/images/photo1.png" alt="Imagen de banner" class="w-100">
                     </figure>
+
+                    <div class="card position-absolute py-2 px-5">
+                        <div class="content-card d-flex flex-column">
+                            <div class="header-card d-flex align-items-center">
+                                <figure class="m-0">
+                                    <img src="./assets/images/photo2.png" alt="">
+                                </figure>
+                                <div class="px-2">
+                                    <div class="name">
+                                        <p class="m-0">Aliza Webber</p>
+                                    </div>
+                                    <div class="rol">
+                                        <p class="m-0">Interior Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>
+                                Designed in 2021 by <br> Aliza Webber
+                            </h3>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -85,38 +108,37 @@
     <main>
         <section class="products">
             <div class="container">
-                <div class="row py-4">
-                    <h2 class="">Productos Destacados</h2>
+                <div class="row py-5 position-relative">
+                    <h2 class=" ">Featured Products</h2>
 
-                    <div class="owl-carousel owl-theme my-4">
-                        <div class="item">
-                            <div class="content-item">
-                                <div class="header-content-item position-relative">
-                                    <figure class="m-0">
-                                        <img src="https://qidcfx1zbotbdw8uoij2kll.blob.core.windows.net/sys-master-images/hc0/h4f/8932536221726/85001_01_media_csl1200Wx1200H" alt="" srcset="" class="w-100">
+                    <div class="owl-carousel owl-theme my-4 ">
+                        <div class="item ">
+                            <div class="content-item ">
+                                <div class="header-content-item position-relative ">
+                                    <figure class="m-0 ">
+                                        <img src="https://qidcfx1zbotbdw8uoij2kll.blob.core.windows.net/sys-master-images/hc0/h4f/8932536221726/85001_01_media_csl1200Wx1200H " alt=" " srcset=" " class="w-100 ">
                                     </figure>
-                                    <div class="float">
-                                        <div class="dscto">
+                                    <div class="float ">
+                                        <div class="dscto ">
 
                                         </div>
                                     </div>
                                 </div>
-                                <div class="body-content-item d-flex flex-column p-2">
-                                    <span class="marca">SOLE</span>
-                                    <a href="" class="title">Cocina Eléctrica SOLCO034 Empotrable</a>
-                                    <div class="prices d-flex flex-column my-2">
-                                        <span class="price price-o"> 1049.99</span>
-                                        <span class="price price-dscto">799.04</span>
+                                <div class="body-content-item d-flex flex-column p-2 ">
+                                    <span class="marca ">SOLE</span>
+                                    <a href=" " class="title ">Cocina Eléctrica SOLCO034 Empotrable</a>
+                                    <div class="prices d-flex flex-column my-2 ">
+                                        <span class="price price-o "> 1049.99</span>
+                                        <span class="price price-dscto ">799.04</span>
                                     </div>
 
-                                    <div class="btns d-flex justify-content-between mt-2">
-                                        <div class="nice-number">
-                                            <input type="number" min="1">
+                                    <div class="btns d-flex justify-content-between mt-2 ">
+                                        <div class="nice-number ">
+                                            <input type="number " min="1 ">
                                         </div>
 
-                                        <a class="content-ac text-white  justify-content-center" data-id="1" title="Agregar al carrito">
-                                            <span class="d-flex
-                                            justify-content-center align-items-center agregar-carrito  material-icons">
+                                        <a class="content-ac text-white justify-content-center " data-id="1 " title="Agregar al carrito ">
+                                            <span class="d-flex justify-content-center align-items-center agregar-carrito material-icons ">
                                                 shopping_cart
                                             </span>
                                         </a>
@@ -124,36 +146,35 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="content-item">
-                                <div class="header-content-item position-relative">
-                                    <figure class="m-0">
-                                        <img src="https://qidcfx1zbotbdw8uoij2kll.blob.core.windows.net/sys-master-images/hc0/h4f/8932536221726/85001_01_media_csl1200Wx1200H" alt="" srcset="" class="w-100">
+                        <div class="item ">
+                            <div class="content-item ">
+                                <div class="header-content-item position-relative ">
+                                    <figure class="m-0 ">
+                                        <img src="https://qidcfx1zbotbdw8uoij2kll.blob.core.windows.net/sys-master-images/hc0/h4f/8932536221726/85001_01_media_csl1200Wx1200H " alt=" " srcset=" " class="w-100 ">
                                     </figure>
-                                    <div class="flag position-absolute py-1 px-2">
-                                        <div class="dscto">
+                                    <div class="flag position-absolute py-1 px-2 ">
+                                        <div class="dscto ">
                                             <span>
                                                 18.81%
                                             </span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="body-content-item d-flex flex-column p-2">
-                                    <span class="marca">SOLE</span>
-                                    <a href="" class="title">Cocina Eléctrica SOLCO040 Empotrable</a>
-                                    <div class="prices d-flex flex-column my-2">
-                                        <span class="price price-o"> 1599.99</span>
-                                        <span class="price price-dscto">1299.03</span>
+                                <div class="body-content-item d-flex flex-column p-2 ">
+                                    <span class="marca ">SOLE</span>
+                                    <a href=" " class="title ">Cocina Eléctrica SOLCO040 Empotrable</a>
+                                    <div class="prices d-flex flex-column my-2 ">
+                                        <span class="price price-o "> 1599.99</span>
+                                        <span class="price price-dscto ">1299.03</span>
                                     </div>
 
-                                    <div class="btns d-flex justify-content-between mt-2">
-                                        <div class="nice-number">
-                                            <input type="number" min="1">
+                                    <div class="btns d-flex justify-content-between mt-2 ">
+                                        <div class="nice-number ">
+                                            <input type="number " min="1 ">
                                         </div>
 
-                                        <a class="text-white content-ac" data-id="2" title="Agregar al carrito">
-                                            <span class="d-flex
-                                            justify-content-center align-items-center  agregar-carrito  material-icons">
+                                        <a class="text-white content-ac " data-id="2 " title="Agregar al carrito ">
+                                            <span class="d-flex justify-content-center align-items-center agregar-carrito material-icons ">
                                              shopping_cart
                                             </span>
                                         </a>
@@ -161,7 +182,113 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="item ">
+                            <div class="content-item ">
+                                <div class="header-content-item position-relative ">
+                                    <figure class="m-0 ">
+                                        <img src="https://qidcfx1zbotbdw8uoij2kll.blob.core.windows.net/sys-master-images/h8d/h1a/8839639957534/73645_01_media_csl1200Wx1200H " alt=" " srcset=" " class="w-100 ">
+                                    </figure>
+                                    <div class="flag position-absolute py-1 px-2 ">
+                                        <div class="dscto ">
+                                            <span>
+                                                73.0%
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="body-content-item d-flex flex-column p-2 ">
+                                    <span class="marca ">FERRUM</span>
+                                    <a href=" " class="title ">Two Piece Bari Descarga Dual - Blanco</a>
+                                    <div class="prices d-flex flex-column my-2 ">
+                                        <span class="price price-o "> 1667.58</span>
+                                        <span class="price price-dscto ">499.99</span>
+                                    </div>
 
+                                    <div class="btns d-flex justify-content-between mt-2 ">
+                                        <div class="nice-number ">
+                                            <input type="number " min="1 ">
+                                        </div>
+
+                                        <a class="text-white content-ac " data-id="3 " title="Agregar al carrito ">
+                                            <span class="d-flex justify-content-center align-items-center agregar-carrito material-icons ">
+                                             shopping_cart
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <div class="content-item ">
+                                <div class="header-content-item position-relative ">
+                                    <figure class="m-0 ">
+                                        <img src="https://qidcfx1zbotbdw8uoij2kll.blob.core.windows.net/sys-master-images/h93/he9/8932525244446/72021_01_media_csl1200Wx1200H " alt=" " srcset=" " class="w-100 ">
+                                    </figure>
+                                    <div class="flag position-absolute py-1 px-2 ">
+                                        <div class="dscto ">
+                                            <span>
+                                                70.0%
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="body-content-item d-flex flex-column p-2 ">
+                                    <span class="marca ">FERRUM</span>
+                                    <a href=" " class="title ">Lavatorio Cuadra Para Sobreponer - Blanco</a>
+                                    <div class="prices d-flex flex-column my-2 ">
+                                        <span class="price price-o "> 1022.59</span>
+                                        <span class="price price-dscto ">306.78</span>
+                                    </div>
+
+                                    <div class="btns d-flex justify-content-between mt-2 ">
+                                        <div class="nice-number ">
+                                            <input type="number " min="1 ">
+                                        </div>
+
+                                        <a class="text-white content-ac " data-id="3 " title="Agregar al carrito ">
+                                            <span class="d-flex justify-content-center align-items-center agregar-carrito material-icons ">
+                                             shopping_cart
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <div class="content-item ">
+                                <div class="header-content-item position-relative ">
+                                    <figure class="m-0 ">
+                                        <img src="https://qidcfx1zbotbdw8uoij2kll.blob.core.windows.net/sys-master-images/h94/h49/8864316948510/106660_03_media_csl300Wx300H " alt=" " srcset=" " class="w-100 ">
+                                    </figure>
+                                    <!-- <div class="flag position-absolute py-1 px-2 ">
+                                        <div class="dscto ">
+                                            <span>
+                                            </span>
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <div class="body-content-item d-flex flex-column p-2 ">
+                                    <span class="marca ">GOLDEN BATH</span>
+                                    <a href=" " class="title ">Mueble Para Baño Lesslie - Marrón &nbsp;</a>
+                                    <div class="prices d-flex flex-column my-2 ">
+                                        <span class=" "> &nbsp;</span>
+                                        <span class="price price-dscto ">1430.27</span>
+                                    </div>
+
+                                    <div class="btns d-flex justify-content-between mt-2 ">
+                                        <div class="nice-number ">
+                                            <input type="number " min="1 ">
+                                        </div>
+
+                                        <a class="text-white content-ac " data-id="3 " title="Agregar al carrito ">
+                                            <span class="d-flex justify-content-center align-items-center agregar-carrito material-icons ">
+                                             shopping_cart
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
         </section>
@@ -170,11 +297,11 @@
     <footer>
         <div class="container ">
             <div class="row ">
-                <div class="content-credits d-flex justify-content-center align-items-center px-5 py-4">
+                <div class="content-credits d-flex justify-content-center align-items-center px-5 py-4 ">
 
-                    <p class="m-0 text-center text-white">
-                        Created by <b>Fanny Farro</b> -
-                        <a href="" class="">devChallenges.io</a>
+                    <p class="m-0 text-center text-white ">
+                        Creado por <a href="https://github.com/FannyFarroF/ " class="text-white fw-bold ">Fanny Farro</a> -
+                        <a href="https://devchallenges.io/ " class="text-light ">devChallenges.io</a>
                     </p>
                 </div>
             </div>
@@ -182,69 +309,69 @@
     </footer>
 
     <!-- OFFCANVAS -->
-    <div class="offcanvas offcanvas-end carrito" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel">Carro de compras</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="offcanvas offcanvas-end carrito " tabindex="-1 " id="offcanvasRight " aria-labelledby="offcanvasRightLabel ">
+        <div class="offcanvas-header ">
+            <h5 id="offcanvasRightLabel ">Shopping cart</h5>
+            <button type="button " class="btn-close text-reset " data-bs-dismiss="offcanvas " aria-label="Close "></button>
         </div>
-        <div class="offcanvas-body">
-            <div class="list">
-                <ul class="list-products p-0 m-0">
+        <div class="offcanvas-body ">
+            <div class="list ">
+                <ul class="list-products p-0 m-0 ">
                 </ul>
             </div>
         </div>
-        <div class="offcanvas-footer">
-            <div class="resum-cart py-1">
-                <div class="item-row-cart d-flex justify-content-between px-2 py-2">
-                    <div class="">Subtotal</div>
-                    <div class="subtotal price">00.00</div>
+        <div class="offcanvas-footer ">
+            <div class="resum-cart py-1 ">
+                <div class="item-row-cart d-flex justify-content-between px-2 py-2 ">
+                    <div class=" ">Subtotal</div>
+                    <div class="subtotal price ">00.00</div>
                 </div>
-                <div class="item-row-cart d-flex justify-content-between px-2 py-2">
-                    <div class="">Descuento</div>
-                    <div class="price">00.00</div>
+                <div class="item-row-cart d-flex justify-content-between px-2 py-2 ">
+                    <div class=" ">Descuento</div>
+                    <div class="price ">00.00</div>
                 </div>
-                <div class="item-row-cart d-flex justify-content-between px-2 py-2">
-                    <div class="">Envío</div>
-                    <div class="price">00.00</div>
+                <div class="item-row-cart d-flex justify-content-between px-2 py-2 ">
+                    <div class=" ">Envío</div>
+                    <div class="price ">00.00</div>
                 </div>
-                <div class="item-row-cart d-flex justify-content-between px-2 py-2">
-                    <div class="neg">Total</div>
-                    <div class="total neg price">00.00</div>
+                <div class="item-row-cart d-flex justify-content-between px-2 py-2 ">
+                    <div class="neg ">Total</div>
+                    <div class="total neg price ">00.00</div>
                 </div>
             </div>
-            <div class="d-flex justify-content-between">
-                <a href="" class="redireccionar btn-seguir">Seguir Comprando</a>
-                <a href="" class="redireccionar btn-carrito">Ir a mi carro</a>
+            <div class="d-flex justify-content-between ">
+                <a href=" " class="redireccionar btn-seguir ">Seguir Comprando</a>
+                <a href=" " class="redireccionar btn-carrito ">Ir a mi carro</a>
             </div>
         </div>
     </div>
 
-    <div class="offcanvas offcanvas-end login" tabindex="-1" id="offcanvasLogin" aria-labelledby="offcanvasLoginLabel">
+    <div class="offcanvas offcanvas-end login " tabindex="-1 " id="offcanvasLogin " aria-labelledby="offcanvasLoginLabel ">
         <div class="offcanvas-header ">
-            <h5 id="offcanvasLoginLabel">Login</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 id="offcanvasLoginLabel ">Login</h5>
+            <button type="button " class="btn-close text-reset " data-bs-dismiss="offcanvas " aria-label="Close "></button>
         </div>
-        <div class="offcanvas-body px-5">
+        <div class="offcanvas-body px-5 ">
 
-            <form action="">
-                <div class="form-group">
-                    <input type="text" class="input w-100" placeholder="Email">
-                    <span class="underline"></span>
+            <form action=" ">
+                <div class="form-group ">
+                    <input type="text " class="input w-100 " placeholder="Email ">
+                    <span class="underline "></span>
                 </div>
-                <div class="form-group">
-                    <input type="password" class="input w-100" placeholder="Contraseña">
-                    <span class="underline"></span>
+                <div class="form-group ">
+                    <input type="password " class="input w-100 " placeholder="Password ">
+                    <span class="underline "></span>
                 </div>
-                <div class="form-group d-flex justify-content-center enlaces">
-                    <a href="" class="text-center w-100"> ¿Olvidaste tu contraseña?</a>
+                <div class="form-group d-flex justify-content-center enlaces ">
+                    <a href=" " class="text-center w-100 "> Forgot your password?</a>
                 </div>
-                <div class="form-group my-3">
-                    <input type="submit" value="Continuar" class="redireccionar">
+                <div class="form-group my-3 ">
+                    <input type="submit " value="Continue " class="redireccionar ">
                 </div>
-                <div class="form-group d-flex justify-content-center enlaces">
+                <div class="form-group d-flex justify-content-center enlaces ">
                     <span>
-                        ¿No tienes cuenta?
-                        <a href="" class="text-center w-100"> Registrate</a>
+                        Don't have an account?
+                        <a href=" " class="text-center w-100 "> Register</a>
                     </span>
                 </div>
             </form>
@@ -252,64 +379,90 @@
         </div>
     </div>
 
+    <div class="offcanvas offcanvas-end nav-gen " tabindex="-1 " id="offcanvasMenu " aria-labelledby="offcanvasMenuLabel ">
+        <div class="offcanvas-header d-flex justify-content-end ">
+            <button type="button " class="text-white btn-close text-reset " data-bs-dismiss="offcanvas " aria-label="Close ">X</button>
+        </div>
+        <div class="offcanvas-body px-5 d-flex justify-content-center align-items-center ">
+
+            <nav>
+                <ul class="p-0 m-0 ">
+                    <li class="item-nav-o active py-3 text-center ">
+                        <a href=" " class="text-white py-2 py-2 ">Home</a>
+                    </li>
+                    <li class="item-nav-o py-3 text-center ">
+                        <a href=" " class="text-white py-2 py-2 ">Collection</a>
+                    </li>
+                    <li class="item-nav-o py-3 text-center ">
+                        <a href=" " class="text-white py-2 py-2 ">About</a>
+                    </li>
+                    <li class="item-nav-o py-3 text-center ">
+                        <a href=" " class="text-white py-2 py-2 ">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
     <!-- Modal -->
-    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade " id="exampleModal " tabindex="-1 " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
                 </div>
-                <div class="modal-body">
-                    <div class="row-modal d-flex align-items-center justify-content-center">
-                        <span class="material-icons mx-2">
+                <div class="modal-body ">
+                    <div class="row-modal d-flex align-items-center justify-content-center ">
+                        <span class="material-icons mx-2 ">
                             check_circle
-                        </span> Producto agregado al carro
+                        </span> Product added to cart.
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <div class="modal-footer ">
+                    <button type="button " class="btn btn-secondary " data-bs-dismiss="modal ">Close</button>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Modal -->
-    <div class="modal fade " id="actualizarModal" tabindex="-1" aria-labelledby="actualizarModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade " id="actualizarModal " tabindex="-1 " aria-labelledby="actualizarModalLabel " aria-hidden="true ">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
                 </div>
-                <div class="modal-body">
-                    <div class="row-modal d-flex align-items-center justify-content-center">
-                        <span class="material-icons">
+                <div class="modal-body ">
+                    <div class="row-modal d-flex align-items-center justify-content-center ">
+                        <span class="material-icons ">
                             update
-                        </span> Producto actualizado
+                        </span> Product update.
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <div class="modal-footer ">
+                    <button type="button " class="btn btn-secondary " data-bs-dismiss="modal ">Close</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="assets/js/app.js"></script>
-    <script src="assets/lib/jquery/jquery.js"></script>
-    <script src="assets/lib/bootstrap/bootstrap.min.js"></script>
-    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="assets/lib/nice-number/jquery.nice-number.min.js"></script>
+    <script src="assets/js/app.js "></script>
+    <script src="assets/lib/jquery/jquery.js "></script>
+    <script src="assets/lib/bootstrap/bootstrap.min.js "></script>
+    <script src="assets/lib/owlcarousel/owl.carousel.min.js "></script>
+    <script src="assets/lib/nice-number/jquery.nice-number.min.js "></script>
     <script>
         $('.owl-carousel').owlCarousel({
             responsiveClass: true,
             margin: 10,
             nav: true,
+            dots: false,
             responsive: {
                 0: {
                     items: 1
                 },
                 600: {
-                    items: 3
+                    items: 2
                 },
                 1000: {
                     items: 4
@@ -320,7 +473,7 @@
 
     <script>
         $(function() {
-            $('input[type="number"]').niceNumber({
+            $('input[type="number "]').niceNumber({
                 // auto resize the number input
                 autoSize: true,
 

@@ -38,7 +38,7 @@ function verificarCarrito() {
                 <span class="material-icons">
                     sentiment_very_dissatisfied
                 </span>
-                <p class="my-2"> Tu carrito está vacío.</p>`;
+                <p class="my-2">Your cart is empty.</p>`;
         offcanvasbody.appendChild(row)
     } else {
         offcanvasfooter.classList.remove('d-none');

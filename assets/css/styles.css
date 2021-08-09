@@ -19,6 +19,10 @@ body {
     background: var(--primary-bg-color);
 }
 
+li {
+    list-style: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -47,6 +51,10 @@ header nav ul li.active a {
     float: right
 }
 
+.banner-content {
+    padding-bottom: 150px !important;
+}
+
 .banner .content-text h3 {
     font-family: 'Lora', serif;
     font-size: 45px;
@@ -62,6 +70,49 @@ header nav ul li.active a {
 .banner .content-text a {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+}
+
+.banner .card {
+    background: var(--primary-bg-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    bottom: -100px;
+    right: 20px;
+    border-radius: 0;
+    width: 350px;
+}
+
+.banner .card .name {
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.banner .card .rol {
+    color: rgba(130, 130, 130, 1);
+    font-size: 12px;
+}
+
+.banner .card h3 {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Lora', serif;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.banner .card figure {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 75px;
+    height: 75px;
+}
+
+.banner .card figure img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 main {
@@ -97,10 +148,6 @@ main {
 .products .item .body-content-item a {
     color: #2e374c;
     font-weight: 600;
-}
-
-.products .item .body-content-item .agregar-carrito::after {
-    /* content: 'e8cc'; */
 }
 
 .products .item .body-content-item .agregar-carrito {
@@ -148,25 +195,24 @@ main {
     border: 1px solid #ccc;
 }
 
+.owl-carousel {
+    display: flex !important;
+    flex-direction: column-reverse;
+}
+
 .owl-nav {
     display: flex;
     justify-content: space-between;
     padding: 15px 0;
+    position: absolute;
+    right: 15px;
+    top: -96px;
 }
 
 .owl-nav button {
-    background: #fff !important;
-    width: 30px;
-    height: 35px;
-    font-size: 20px;
-}
-
-.owl-dots button {
-    background: #fff !important;
-}
-
-.owl-dots button span {
-    color: #fff !important;
+    color: rgb(143, 143, 143) !important;
+    font-size: 36px !important;
+    margin-left: 15px;
 }
 
 
@@ -255,11 +301,6 @@ main {
     border-top: 0 !important;
 }
 
-.login .offcanvas-header {
-    /* background: #2e374c; */
-    /* color: #fff; */
-}
-
 .login .offcanvas-header h5 {
     width: 100%;
     text-align: center;
@@ -309,4 +350,47 @@ main {
 
 .login .enlaces a:hover {
     text-decoration: underline;
+}
+
+.nav-gen {
+    background: var(--primary-bg-color);
+}
+
+.nav-gen button {
+    color: #fff !important;
+    font-size: 1.3rem;
+    opacity: inherit;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-gen ul li a {
+    transition: 0.8s all;
+}
+
+.nav-gen ul li.active a {
+    border-bottom: 1px solid #fff;
+}
+
+.nav-gen ul li:hover a {
+    border-bottom: 1px solid #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    header ul {
+        padding-left: 0 !important;
+    }
+    header ul li {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+    .banner-content {
+        flex-direction: column;
+    }
+    .banner-content>div:nth-child(2) {
+        margin-top: 20px;
+    }
+    .banner-content figure.img-banner {
+        width: 100% !important;
+    }
 }
