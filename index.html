@@ -27,15 +27,29 @@
                 </a>
 
                 <nav>
-                    <ul class="d-flex m-0">
-                        <li class="px-4 active py-2"><a href="" class="text-white  p-1">Home</a></li>
+                    <ul class="d-flex m-0 align-items-center">
+                        <li class="px-4 ">
+                            <a href="" class="d-flex align-items-center text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <span class="material-icons">
+                                    shopping_cart
+                                </span>
+                            </a>
+                        </li>
+                        <li class="px-4 d-flex align-items-center">
+                            <a href="" class="d-flex text-white align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLogin" aria-controls="offcanvasLogin">
+                                <span class="material-icons">
+                                    person
+                                </span>
+                            </a>
+                        </li>
+                        <!-- <li class="px-4 active py-2"><a href="" class="text-white  p-1">Home</a></li>
                         <li class="px-4 py-2"><a href="" class="text-white p-1">Collection</a></li>
                         <li class="px-4 py-2">
                             <a href="" class="text-white p-1">About</a>
                         </li>
                         <li class="px-4 py-2">
                             <a href="" class="text-white p-1">Contact</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </nav>
 
@@ -52,8 +66,10 @@
                         <p class="my-4">
                             A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.
                         </p>
-                        <a href="" class="text-white">Read more 
-                           
+                        <a href="" class="text-white d-flex align-items-center">Read more 
+                            <span class="material-icons mx-2">
+                                arrow_forward
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -98,10 +114,11 @@
                                             <input type="number" min="1">
                                         </div>
 
-                                        <a class="agregar-carrito text-white d-flex align-items-center justify-content-center" data-id="1" title="Agregar al carrito">
-                                            <span class="material-icons">
-shopping_cart
-</span>
+                                        <a class="content-ac text-white  justify-content-center" data-id="1" title="Agregar al carrito">
+                                            <span class="d-flex
+                                            justify-content-center align-items-center agregar-carrito  material-icons">
+                                                shopping_cart
+                                            </span>
                                         </a>
                                     </div>
                                 </div>
@@ -134,10 +151,11 @@ shopping_cart
                                             <input type="number" min="1">
                                         </div>
 
-                                        <a class="agregar-carrito text-white d-flex align-items-center justify-content-center" data-id="2" title="Agregar al carrito">
-                                            <span class="material-icons">
-shopping_cart
-</span>
+                                        <a class="text-white content-ac" data-id="2" title="Agregar al carrito">
+                                            <span class="d-flex
+                                            justify-content-center align-items-center  agregar-carrito  material-icons">
+                                             shopping_cart
+                                            </span>
                                         </a>
                                     </div>
                                 </div>
@@ -148,14 +166,133 @@ shopping_cart
                 </div>
         </section>
     </main>
+
     <footer>
         <div class="container ">
             <div class="row ">
+                <div class="content-credits d-flex justify-content-center align-items-center px-5 py-4">
 
+                    <p class="m-0 text-center text-white">
+                        Created by <b>Fanny Farro</b> -
+                        <a href="" class="">devChallenges.io</a>
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- OFFCANVAS -->
+    <div class="offcanvas offcanvas-end carrito" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Carro de compras</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="list">
+                <ul class="list-products p-0 m-0">
+                </ul>
+            </div>
+        </div>
+        <div class="offcanvas-footer">
+            <div class="resum-cart py-1">
+                <div class="item-row-cart d-flex justify-content-between px-2 py-2">
+                    <div class="">Subtotal</div>
+                    <div class="subtotal price">00.00</div>
+                </div>
+                <div class="item-row-cart d-flex justify-content-between px-2 py-2">
+                    <div class="">Descuento</div>
+                    <div class="price">00.00</div>
+                </div>
+                <div class="item-row-cart d-flex justify-content-between px-2 py-2">
+                    <div class="">Envío</div>
+                    <div class="price">00.00</div>
+                </div>
+                <div class="item-row-cart d-flex justify-content-between px-2 py-2">
+                    <div class="neg">Total</div>
+                    <div class="total neg price">00.00</div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <a href="" class="redireccionar btn-seguir">Seguir Comprando</a>
+                <a href="" class="redireccionar btn-carrito">Ir a mi carro</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end login" tabindex="-1" id="offcanvasLogin" aria-labelledby="offcanvasLoginLabel">
+        <div class="offcanvas-header ">
+            <h5 id="offcanvasLoginLabel">Login</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-5">
+
+            <form action="">
+                <div class="form-group">
+                    <input type="text" class="input w-100" placeholder="Email">
+                    <span class="underline"></span>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="input w-100" placeholder="Contraseña">
+                    <span class="underline"></span>
+                </div>
+                <div class="form-group d-flex justify-content-center enlaces">
+                    <a href="" class="text-center w-100"> ¿Olvidaste tu contraseña?</a>
+                </div>
+                <div class="form-group my-3">
+                    <input type="submit" value="Continuar" class="redireccionar">
+                </div>
+                <div class="form-group d-flex justify-content-center enlaces">
+                    <span>
+                        ¿No tienes cuenta?
+                        <a href="" class="text-center w-100"> Registrate</a>
+                    </span>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row-modal d-flex align-items-center justify-content-center">
+                        <span class="material-icons mx-2">
+                            check_circle
+                        </span> Producto agregado al carro
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade " id="actualizarModal" tabindex="-1" aria-labelledby="actualizarModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row-modal d-flex align-items-center justify-content-center">
+                        <span class="material-icons">
+                            update
+                        </span> Producto actualizado
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="assets/js/app.js"></script>
     <script src="assets/lib/jquery/jquery.js"></script>

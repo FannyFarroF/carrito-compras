@@ -74,7 +74,7 @@ main {
  */
 
 .products {
-    margin: 20px 0;
+    padding: 25px 0;
 }
 
 .products .item {
@@ -97,6 +97,10 @@ main {
 .products .item .body-content-item a {
     color: #2e374c;
     font-weight: 600;
+}
+
+.products .item .body-content-item .agregar-carrito::after {
+    /* content: 'e8cc'; */
 }
 
 .products .item .body-content-item .agregar-carrito {
@@ -163,4 +167,146 @@ main {
 
 .owl-dots button span {
     color: #fff !important;
+}
+
+
+/*----------------------------------
+          *** CARRITO ***                             
+----------------------------------*/
+
+.carrito .list .list-products li {
+    list-style: none;
+    display: flex;
+    font-size: 14px;
+}
+
+.carrito .list .list-products li .title,
+.carrito .list .list-products li a {
+    color: #2e374c;
+}
+
+.carrito .list .list-products li a:hover {
+    text-decoration: underline;
+}
+
+.carrito .list .list-products .img-product {
+    width: 120px;
+    border-radius: 5px;
+}
+
+.offcanvas-footer>div {
+    padding: 1rem 1rem;
+}
+
+.msj-vacio {
+    justify-content: center;
+    align-items: center;
+}
+
+.msj-vacio {
+    font-size: 15px;
+}
+
+.msj-vacio span {
+    font-size: 4.5rem;
+}
+
+.resum-cart {
+    background: #f2f2f2;
+}
+
+.resum-cart>.item-row-cart:nth-child(1),
+.resum-cart>.item-row-cart:nth-child(2),
+.resum-cart>.item-row-cart:nth-child(3) {
+    color: #2e374c
+}
+
+.resum-cart>.item-row-cart:nth-child(3) {
+    border-bottom: 1px solid #2e374c;
+}
+
+.redireccionar {
+    padding: 0.6rem;
+    text-align: center;
+    width: 160px;
+}
+
+.redireccionar.btn-seguir {
+    border: 1px solid #000;
+    color: #333;
+}
+
+.redireccionar.btn-carrito {
+    background: #000;
+    color: #fff;
+}
+
+.neg {
+    font-weight: 700;
+}
+
+.modal .modal-body {
+    font-size: 1.3rem !important;
+}
+
+.modal .modal-header,
+.modal .modal-footer {
+    border-bottom: 0 !important;
+    border-top: 0 !important;
+}
+
+.login .offcanvas-header {
+    /* background: #2e374c; */
+    /* color: #fff; */
+}
+
+.login .offcanvas-header h5 {
+    width: 100%;
+    text-align: center;
+}
+
+.login .form-group input {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #2e374c;
+    outline: none !important;
+    transition: 0.8s all;
+    height: 50px;
+    padding: 5px 0;
+}
+
+.login .form-group .underline {
+    width: 0;
+    height: 2px;
+    transition: 0.8s all;
+    background: #181719;
+    position: relative;
+    bottom: 18px;
+    display: inline-block;
+}
+
+.input:focus~.underline {
+    width: 100% !important;
+}
+
+.login .redireccionar {
+    border: 0 !important;
+    background: #000 !important;
+    border-radius: 5px;
+    color: #fff;
+    width: 100%;
+    transition: 0.8s all;
+}
+
+.login .redireccionar:hover {
+    opacity: 0.89;
+}
+
+.login .enlaces a {
+    color: #818181;
+    font-size: 14px;
+}
+
+.login .enlaces a:hover {
+    text-decoration: underline;
 }
